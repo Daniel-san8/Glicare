@@ -10,7 +10,12 @@ export default {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        foreground: "var(--color-gray)",
+        primary: "var(--color-gray)",
+        secondary: "var(--color-blue)",
+      },
+      fontFamily: {
+        roboto: "var(--font-roboto)", 
       },
     },
   },
