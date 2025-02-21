@@ -10,7 +10,7 @@ export default function Header() {
           <LogoGlicare />
           <p className='font-roboto font-semibold text-4xl'>Glicare</p>
         </div>
-        <Button classAttributes='lg:hidden'>
+        <Button classAttributes='lg:hidden bg-transparent'>
           <NavigationMenu />
         </Button>
         <ul className='hidden lg:flex justify-around text-textColor gap-12 2xl:gap-24 font-inter font-medium text-base list-none'> 
