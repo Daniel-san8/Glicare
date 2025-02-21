@@ -1,6 +1,6 @@
 import Button from "@/app/components/ui/button"
 import NavigationMenu from "../../../public/svg/navigation-menu"
-import LogoGlicare from "../../../public/svg/logo-glicare"
+import LogoGlicare from "../../../public/svg/icon-glicare-dark"
 
 export default function Header() {
   return (
