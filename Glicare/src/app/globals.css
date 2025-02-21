@@ -7,6 +7,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #4568FC;
+  --primary-gray: #F5F5F5;
   --font-roboto: "Roboto", sans-serif;
   --font-inter: "Inter", sans-serif;
 }
@@ -15,7 +17,7 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--primary-gray);
   font-family: var(--font-inter);
 }
 

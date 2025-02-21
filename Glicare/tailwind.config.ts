@@ -11,12 +11,10 @@
         colors: {
           background: "var(--background)",
           foreground: "var(--foreground)",
-
-          primary: "var(--color-gray)",
-          secondary: "#4568fc",
-
+          primary: "var(--primary)",
+          'primary-gray': "var(--primary-gray)",
+          secondary: "#4568FC",
           textColor: "var(--color-text-gray)",
-          
         },
         fontFamily: {
           roboto: "var(--font-roboto)",

@@ -2,18 +2,18 @@ import IconGlicare from "../../../public/svg/IconGlicare";
 import IconNameGlicare from "../../../public/svg/IconNameGlicare";
 
 export default function Footer() {
-    return <footer className="bg-[#4568FC] text-[#F5F5F5] pl-6 lg:grid lg:grid-cols-2 lg:grid-rows-[100px 50px 100px] lg:pl-16">
+    return <footer className="bg-blue-500 text-primary-gray pl-6 lg:grid lg:grid-cols-2 lg:grid-rows-[100px 50px 100px] lg:pl-16">
         <div className="flex items-center gap-x-5 pt-9 pb-14 lg:pb-0 lg:pt-0 lg:col-span-1 lg:max-h-14 lg:self-center">
             <IconGlicare />
             <IconNameGlicare />
         </div>
 
         <ul className="flex flex-col gap-y-5 pb-16 font-medium max-w-40 lg:col-span-1 lg:row-span-2 lg:justify-self-center lg:pt-40">
-            <li className="cursor-pointer">Nosso aplicativo</li>
-            <li className="cursor-pointer">Depoimentos</li>
-            <li className="cursor-pointer">Sobre diabetes</li>
-            <li className="cursor-pointer">Contatos</li>
-            <li className="cursor-pointer">Quem somos</li>
+            <li><a href="">Nosso aplicativo</a></li>
+            <li><a href="">Depoimentos</a></li>
+            <li><a href="">Sobre diabetes</a></li>
+            <li><a href="">Contatos</a></li>
+            <li><a href="">Quem somos</a></li>
         </ul>
 
         <p className="pr-6 pb-10 lg:col-span-1 lg:pb-0 lg:pr-20 lg:row-span-1">
