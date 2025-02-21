@@ -13,7 +13,7 @@
           foreground: "var(--foreground)",
 
           primary: "var(--color-gray)",
-          secondary: "var(--color-blue)",
+          secondary: "#4568fc",
 
           textColor: "var(--color-text-gray)",
           
