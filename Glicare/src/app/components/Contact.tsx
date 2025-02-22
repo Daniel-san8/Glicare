@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Contact = () => {
+export default function Contact() {
   return (
     <section className="min-h-screen w-full flex-shrink-0 bg-[#F5F5F5]">
       <div className="text-left py-12 px-6 bg-gray-100">
@@ -70,10 +70,36 @@ const Contact = () => {
           </div>
         </div>
 
-        
+        <div className="flex md:hidden justify-center gap-16 mr-4">
+          <div className="text-center">
+            <Image
+              src="/Images/Icons/ÍCONE _ Telefone.svg"
+              alt="Ícone de Telefone"
+              width={36}
+              height={36}
+              className="fill-[#1C1C1C] ml-9"
+            />
+          </div>
+          <div className="text-center">
+            <Image
+              src="/Images/Icons/ÍCONE _ WhatsApp.svg"
+              alt="Ícone de WhatsApp"
+              width={40}
+              height={40}
+              className="fill-[#1C1C1C]"
+            />
+          </div>
+          <div className="text-center">
+            <Image
+              src="/Images/Icons/ÍCONE _ Email.svg"
+              alt="Ícone de E-mail"
+              width={40}
+              height={40}
+              className="fill-[#1C1C1C]"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
-};
-
-export default Contact;
+}
