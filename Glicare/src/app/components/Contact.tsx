@@ -1,43 +1,34 @@
-import Image from "next/image";
+import PhoneIcon from "../../../public/svg/icon-phone";
+import WhatsAppIcon from "../../../public/svg/icon-whatsapp";
+import EmailIcon from "../../../public/svg/icon-email";
+import Button from "./ui/buttomContact";
 
 export default function Contact() {
   return (
-    <section className="min-h-screen w-full flex-shrink-0 bg-[#F5F5F5]">
+    <section className="min-h-screen w-full flex-shrink-0 bg-primary-gray">
       <div className="text-left py-12 px-6 bg-gray-100">
-        <h2 className="text-[24px] sm:text-[24px] lg:text-[28px] font-medium text-[#1C1C1C] leading-[34px] pl-6 lg:pl-[84px] font-inter w-full pr-16">
+        <h2 className="text-2xl lg:text-[28px] font-medium text-dark leading-[34px] font-inter w-full pr-14">
           Entre em contato com o Glicare
         </h2>
-        <p className="text-[#6F6F6F] mt-2 pl-6 lg:pl-[84px] font-inter pr-10 text-[18px] lg:text-[20px] sm:text-[18px] font-normal leading-[24px] text-left w-full sm:w-[700px]">
+        <p className="text-gray mt-2 font-inter pr-16 text-lg lg:text-xl font-normal leading-[24px] text-left w-full sm:w-[700px]">
           Caso ainda tenha dúvidas ou esteja com problema para utilizar o
           Glicare, você pode entrar em contato conosco abaixo:
         </p>
 
-        <div className="flex flex-col md:flex-row gap-6 mt-[64px] ml-[200px]">
-          <div className="w-[336px] h-[310px] flex-shrink-0 bg-[#FFF] rounded-[16px] p-6 text-center hidden md:block">
-            <Image
-              src="/Images/Icons/ÍCONE _ Telefone.svg"
-              alt="Ícone de Telefone"
-              width={40}
-              height={40}
-              className="mx-auto mt-[54px] fill-[#1C1C1C]"
-            />
-            <h3 className="font-semibold text-lg mt-4 text-[#1C1C1C]">
+        <div className="flex flex-col md:flex-row gap-6 mt-[64px] ml-[125px]">
+          <div className="w-[336px] h-[310px] flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
+            <PhoneIcon className="mx-auto mt-[34px]" />
+            <h3 className="font-semibold text-lg mt-6 text-dark">
               Nos contate diretamente
             </h3>
-            <p className="text-[#0D1978] text-center font-inter text-[20px] font-semibold leading-normal w-[214px] h-[22px] mt-[78px] ml-6">
+            <p className="text-blue text-center font-inter text-xl font-semibold leading-normal w-[214px] h-[22px] mt-[78px] ml-6">
               +55 12 34567-8901
             </p>
           </div>
 
-          <div className="w-[336px] h-[310px] flex-shrink-0 bg-[#FFF] rounded-[16px] p-6 text-center hidden md:block">
-            <Image
-              src="/Images/Icons/ÍCONE _ WhatsApp.svg"
-              alt="Ícone de WhatsApp"
-              width={40}
-              height={40}
-              className="mx-auto mt-[54px] fill-[#1C1C1C]"
-            />
-            <h3 className="font-semibold text-lg mt-4 text-[#1C1C1C]">
+          <div className="w-[336px] h-[310px] flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
+            <WhatsAppIcon className="mx-auto mt-[34px]" />
+            <h3 className="font-semibold text-lg mt-6 text-dark">
               Nos chame no WhatsApp
             </h3>
             <a
@@ -45,26 +36,16 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="inline-flex justify-center items-center gap-2 mt-[70px] px-6 py-3 bg-[#4568FC] text-white rounded-[8px] hover:bg-[#3b56d7]">
-                <span className="text-[#FFF] text-center text-[16px] font-semibold leading-normal font-inter">
-                  Chamar no WhatsApp
-                </span>
-              </button>
+              <Button>Chamar no WhatsApp</Button>
             </a>
           </div>
 
-          <div className="w-[336px] h-[310px] flex-shrink-0 bg-[#FFF] rounded-[16px] p-6 text-center hidden md:block">
-            <Image
-              src="/Images/Icons/ÍCONE _ Email.svg"
-              alt="Ícone de E-mail"
-              width={40}
-              height={40}
-              className="mx-auto mt-[54px] fill-[#1C1C1C]"
-            />
-            <h3 className="font-semibold text-lg mt-4 text-[#1C1C1C]">
+          <div className="w-[336px] h-[310px] flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
+            <EmailIcon className="mx-auto mt-[34px]" />
+            <h3 className="font-semibold text-lg mt-6 text-dark">
               Entre em contato pelo e-mail
             </h3>
-            <p className="text-[#0D1978] mt-[78px] font-inter text-[20px] font-semibold leading-normal">
+            <p className="text-blue mt-[78px] font-inter text-xl font-semibold leading-normal">
               contato@glicare.com
             </p>
           </div>
@@ -72,31 +53,13 @@ export default function Contact() {
 
         <div className="flex md:hidden justify-center gap-16 mr-4">
           <div className="text-center">
-            <Image
-              src="/Images/Icons/ÍCONE _ Telefone.svg"
-              alt="Ícone de Telefone"
-              width={36}
-              height={36}
-              className="fill-[#1C1C1C] ml-9"
-            />
+            <PhoneIcon className="ml-9 w-[36px] h-[36px]" />
           </div>
           <div className="text-center">
-            <Image
-              src="/Images/Icons/ÍCONE _ WhatsApp.svg"
-              alt="Ícone de WhatsApp"
-              width={40}
-              height={40}
-              className="fill-[#1C1C1C]"
-            />
+            <WhatsAppIcon />
           </div>
           <div className="text-center">
-            <Image
-              src="/Images/Icons/ÍCONE _ Email.svg"
-              alt="Ícone de E-mail"
-              width={40}
-              height={40}
-              className="fill-[#1C1C1C]"
-            />
+            <EmailIcon />
           </div>
         </div>
       </div>
