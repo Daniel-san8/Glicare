@@ -5,8 +5,8 @@ import Button from "./ui/buttomContact";
 
 export default function Contact() {
   return (
-    <section className="min-h-screen w-full flex-shrink-0 bg-primary-gray">
-      <div className="text-left py-12 px-6 bg-gray-100">
+    <section className="min-h-screen w-full flex-shrink-0 bg-primary-gray lg:pl-6">
+      <div className="text-left py-12 px-6">
         <h2 className="text-2xl lg:text-[28px] font-medium text-dark leading-[34px] font-inter w-full pr-14">
           Entre em contato com o Glicare
         </h2>
