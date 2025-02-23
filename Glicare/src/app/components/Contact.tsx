@@ -1,7 +1,7 @@
-import PhoneIcon from "../../../public/svg/icon-phone";
-import WhatsAppIcon from "../../../public/svg/icon-whatsapp";
 import Button from "./ui/buttomContact";
 import IconEmail from "../../../public/svg/icon-email";
+import IconPhone from "../../../public/svg/icon-phone";
+import IconWhatsApp from "../../../public/svg/icon-whatsapp";
 
 export default function Contact() {
   return (
@@ -17,7 +17,7 @@ export default function Contact() {
 
         <div className="flex flex-col md:flex-row gap-6 mt-[64px] ml-[125px]">
           <div className="w-[336px] h-[310px] flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
-            <PhoneIcon className="bg-white mx-auto mt-[34px]" />
+            <IconPhone className="bg-white mx-auto mt-[34px]" />
             <h3 className="font-semibold text-lg mt-6 text-dark">
               Nos contate diretamente
             </h3>
@@ -27,7 +27,7 @@ export default function Contact() {
           </div>
 
           <div className="w-[336px] h-[310px] flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
-            <WhatsAppIcon className="bg-white mx-auto mt-[34px]" />
+            <IconWhatsApp className="bg-white mx-auto mt-[34px]" />
             <h3 className="font-semibold text-lg mt-6 text-dark">
               Nos chame no WhatsApp
             </h3>
@@ -53,10 +53,10 @@ export default function Contact() {
 
         <div className="flex md:hidden justify-center gap-16 mr-4">
           <div className="text-center">
-            <PhoneIcon className="bg-white ml-9 w-[36px] h-[36px]" />
+            <IconPhone className="bg-white ml-9 w-[36px] h-[36px]" />
           </div>
           <div className=" bg-white text-center">
-            <WhatsAppIcon />
+            <IconWhatsApp />
           </div>
           <div className="bg-white text-center">
             <IconEmail />
