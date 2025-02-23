@@ -1,7 +1,7 @@
 import PhoneIcon from "../../../public/svg/icon-phone";
 import WhatsAppIcon from "../../../public/svg/icon-whatsapp";
-import EmailIcon from "../../../public/svg/icon-email";
 import Button from "./ui/buttomContact";
+import IconEmail from "../../../public/svg/icon-email";
 
 export default function Contact() {
   return (
@@ -17,17 +17,17 @@ export default function Contact() {
 
         <div className="flex flex-col md:flex-row gap-6 mt-[64px] ml-[125px]">
           <div className="w-[336px] h-[310px] flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
-            <PhoneIcon className="mx-auto mt-[34px]" />
+            <PhoneIcon className="bg-white mx-auto mt-[34px]" />
             <h3 className="font-semibold text-lg mt-6 text-dark">
               Nos contate diretamente
             </h3>
-            <p className="text-blue text-center font-inter text-xl font-semibold leading-normal w-[214px] h-[22px] mt-[78px] ml-6">
-              +55 12 34567-8901
-            </p>
+            <a href="tel:+5512345678901" className="text-blue text-center font-inter text-xl font-semibold leading-normal w-[214px] h-[22px] ml-6">
+          +55 12 34567-8901
+        </a>
           </div>
 
           <div className="w-[336px] h-[310px] flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
-            <WhatsAppIcon className="mx-auto mt-[34px]" />
+            <WhatsAppIcon className="bg-white mx-auto mt-[34px]" />
             <h3 className="font-semibold text-lg mt-6 text-dark">
               Nos chame no WhatsApp
             </h3>
@@ -41,25 +41,25 @@ export default function Contact() {
           </div>
 
           <div className="w-[336px] h-[310px] flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
-            <EmailIcon className="mx-auto mt-[34px]" />
+            <IconEmail className="bg-white mx-auto mt-[34px]" />
             <h3 className="font-semibold text-lg mt-6 text-dark">
               Entre em contato pelo e-mail
             </h3>
-            <p className="text-blue mt-[78px] font-inter text-xl font-semibold leading-normal">
-              contato@glicare.com
-            </p>
+            <a href="mailto:contato@glicare.com" className="text-blue font-inter text-xl font-semibold leading-normal">
+          contato@glicare.com
+        </a>
           </div>
         </div>
 
         <div className="flex md:hidden justify-center gap-16 mr-4">
           <div className="text-center">
-            <PhoneIcon className="ml-9 w-[36px] h-[36px]" />
+            <PhoneIcon className="bg-white ml-9 w-[36px] h-[36px]" />
           </div>
-          <div className="text-center">
+          <div className=" bg-white text-center">
             <WhatsAppIcon />
           </div>
-          <div className="text-center">
-            <EmailIcon />
+          <div className="bg-white text-center">
+            <IconEmail />
           </div>
         </div>
       </div>
