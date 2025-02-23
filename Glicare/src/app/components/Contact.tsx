@@ -1,4 +1,4 @@
-import Button from "./ui/buttomContact";
+import Button from "@/app/components/ui/button";
 import IconEmail from "../../../public/svg/icon-email";
 import IconPhone from "../../../public/svg/icon-phone";
 import IconWhatsApp from "../../../public/svg/icon-whatsapp";
