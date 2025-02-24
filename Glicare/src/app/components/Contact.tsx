@@ -7,17 +7,17 @@ export default function Contact() {
   return (
     <section className="min-h-screen w-full flex-shrink-0 bg-primary-gray lg:pl-6">
       <div className="py-12 px-6 text-left">
-        <h2 className="w-full pr-14 text-2xl lg:text-28 font-medium text-dark leading-34">
+        <h2 className="w-full pr-14 text-2xl lg:text-28 font-medium text-dark">
           Entre em contato com o Glicare
         </h2>
-        <p className="text-gray mt-2 text-left w-full sm:w-700 text-lg lg:text-xl font-normal leading-24 pr-16">
+        <p className="w-full sm:w-700 mt-4 md:mt-6 pr-16 text-gray text-left text-lg lg:text-xl font-normal leading-tight">
           Caso ainda tenha dúvidas ou esteja com problema para utilizar o
           Glicare, você pode entrar em contato conosco abaixo:
         </p>
 
-        <div className="flex flex-col md:flex-row gap-6 mt-64 ml-125">
+        <div className="hidden md:flex flex-col md:flex-row gap-6 mt-64 ml-125">
           <div className="w-336 h-310 flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
-            <IconPhone className="bg-white mx-auto mt-34" />
+            <IconPhone className="mx-auto mt-34 bg-white" />
             <h3 className="font-medium text-lg text-dark mt-6 mb-68">
               Nos contate diretamente
             </h3>
@@ -30,7 +30,7 @@ export default function Contact() {
           </div>
 
           <div className="w-336 h-310 flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
-            <IconWhatsApp className="bg-white mx-auto mt-34" />
+            <IconWhatsApp className="mx-auto mt-34 bg-white" />
             <h3 className="font-medium text-lg text-dark mt-6 mb-64">
               Nos chame no WhatsApp
             </h3>
@@ -40,12 +40,14 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="gap-2 px-6 py-4 rounded-lg"
             >
-              <Button classAttributes="font-semibold text-base">Chamar no WhatsApp</Button>
+              <Button classAttributes="font-semibold text-base">
+                Chamar no WhatsApp
+              </Button>
             </a>
           </div>
 
           <div className="w-336 h-310 flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
-            <IconEmail className="bg-white mx-auto mt-34" />
+            <IconEmail className="mx-auto mt-34 bg-white" />
             <h3 className="font-medium text-lg text-dark mt-6 mb-68">
               Entre em contato pelo e-mail
             </h3>
@@ -58,10 +60,16 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="flex justify-center gap-16 mr-4 md:hidden">
-          <IconPhone className="bg-white ml-4 w-36 h-36 mt-1" />
-          <IconWhatsApp className="bg-white" />
-          <IconEmail className="bg-white" />
+        <div className="flex justify-center gap-5 mt-42 ml-4 md:hidden">
+          <div className="flex items-center justify-center w-24 h-74 px-35 py-19 rounded-lg bg-white">
+            <IconPhone className="w-36 h-36 mt-2 shrink-0" />
+          </div>
+          <div className="flex items-center justify-center w-24 h-74 px-33 py-17 rounded-lg bg-white">
+            <IconWhatsApp className="shrink-0" />
+          </div>
+          <div className="flex items-center justify-center w-24 h-74 px-33 py-17 rounded-lg bg-white">
+            <IconEmail className="shrink-0"/>
+          </div>
         </div>
       </div>
     </section>
