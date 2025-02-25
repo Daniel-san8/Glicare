@@ -5,7 +5,7 @@ import IconAppleStore from "@/public/svg/icon-apple-store";
 export default function CallToDownload() {
   return (
     <section>
-      <div className="flex items-end mx-8 rounded-3xl bg-gradient-background h-screen lg:p-16 lg:mx-16">
+      <div className="flex items-end mx-8 rounded-3xl bg-gradient-background h-full lg:pt-36 lg:mx-16">
         <div className="flex flex-col justify-between text-center h-full lg:flex-row lg:items-center lg:text-start">
           <div className="flex flex-col font-inter gap-16 p-8">
             <div className="flex flex-col gap-4">
