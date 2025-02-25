@@ -1,4 +1,4 @@
-import IconGlicare from "../../../public/svg/icon-glicare-light";
+import IconGlicare from "@/public/svg/icon-glicare-light";
 
 export default function Footer() {
     return <footer className="bg-blue-500 text-primary-gray pl-6 lg:grid lg:grid-cols-2 lg:grid-rows-[100px 50px 100px] lg:pl-16">
