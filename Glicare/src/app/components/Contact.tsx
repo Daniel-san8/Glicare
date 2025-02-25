@@ -60,7 +60,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="flex justify-center gap-5 mt-42 ml-4 md:hidden">
+        <div className="flex justify-center gap-5 mt-42  md:hidden">
           <div className="flex items-center justify-center w-24 h-74 px-35 py-19 rounded-lg bg-white">
             <IconPhone className="w-36 h-36 mt-2 shrink-0" />
           </div>
