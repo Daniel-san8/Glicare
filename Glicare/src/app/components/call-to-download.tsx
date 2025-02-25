@@ -20,7 +20,7 @@ export default function CallToDownload() {
               <p className="font-medium text-xl text-colorColorDark">
                 Baixe o Glicare agora e transforme sua saúde!
               </p>
-              <div className="flex gap-8">
+              <div className="flex gap-8 pb-10">
                 <a href="#" aria-label="Baixar na Play Store">
                   <IconPlayStore />
                 </a>
