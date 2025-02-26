@@ -37,3 +37,14 @@ body {
   color: var(--text-blue);
 }
 
+
+.slick-dots li button:before {
+  font-size: 12px; 
+  color: var(--text-gray);
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--primary) !important; 
+  opacity: 1;
+}
