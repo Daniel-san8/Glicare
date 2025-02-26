@@ -1,5 +1,8 @@
+"use client";
 import React from "react";
 import Slider from 'react-slick';
+
+
 import Colaborators from "@/app/components/data/collaborators.json"
 import IconMovePageRight from "@/public/svg/icon-move-page-right";
 import IconMovePageLeft from "@/public/svg/icon-move-page-left";
@@ -12,10 +15,10 @@ export default function WhoWeAre() {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: <IconMovePageRight />,
-    prevArrow: <IconMovePageLeft />,
+    nextArrow: <IconMovePageRight className="slick-arrow right-arrow"/>,
+    prevArrow: <IconMovePageLeft className="slick-arrow left-arrow"/>,
     responsive: [
       {
         breakpoint: 768,
@@ -30,23 +33,23 @@ export default function WhoWeAre() {
     return (
       <section className="w-1440 h-5883 bg-primary-gray pl-6">
         <div className="text-left px-6">
-            <h2  className="text-dark text-28 font-medium">Quem Somos</h2>
+            <h2  className="text-dark text-28 font-medium">Quem somos</h2>
             <p className="text-gray text-xl font-normal mt-6 w-full max-w-700">
               Nós somos o Time Laranja, uma equipe de voluntários do projeto Pipoca Ágil, 
               que projetamos e desenvolvemos o Glicare.
             </p>
         </div>
 
-        <div className="mt-6">
+        <div className="mt-16 ml-12">
         <Slider {...settings}>
           {Colaborators.map((colaborator, index) => (
             <div key={index} className="flex flex-col items-center justify-center p-6">
-              <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
+              <div className="flex items-center justify-center space-x-4">
                 <IconEllipsePhoto /> 
               </div>
-              <h3 className="text-dark text-xl font-medium">{colaborator.nome}</h3>
-              <p className="text-gray text-lg font-normal">{colaborator.funcao}</p>
-              <div className="flex mt-4 space-x-4">
+              <h3 className="text-dark text-center text-2xl font-medium leading-normal mt-6">{colaborator.nome}</h3>
+              <p className="text-gray text-center text-base font-medium leading-normal mt-3">{colaborator.funcao}</p>
+              <div className="flex items-center justify-center space-x-4 mt-36">
                 <a href={colaborator.linkedin} target="_blank" rel="noopener noreferrer">
                   <IconLinkedin />
                 </a>
