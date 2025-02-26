@@ -1,0 +1,30 @@
+[
+    {
+      "nome": "Nome do colaborador",
+      "funcao": "Função",
+      "linkedin": "linkedin",
+      "portfolio": "portfólio",
+      "foto": "url_da_imagem"
+    },
+    {
+     "nome": "Nome do colaborador",
+      "funcao": "Função",
+      "linkedin": "linkedin",
+      "portfolio": "portfólio",
+      "foto": "url_da_imagem"
+    },
+    {
+       "nome": "Nome do colaborador",
+      "funcao": "Função",
+      "linkedin": "linkedin",
+      "portfolio": "portfólio",
+      "foto": "url_da_imagem"
+      },
+      {
+        "nome": "Nome do colaborador",
+      "funcao": "Função",
+      "linkedin": "linkedin",
+      "portfolio": "portfólio",
+      "foto": "url_da_imagem"
+      }
+  ]
