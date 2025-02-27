@@ -15,7 +15,7 @@ export default {
         'primary-gray': "var(--primary-gray)",
         'gray-dark': "var(--text-gray);",
         'blue-dark': "var(--text-blue);",
-
+        'gray-light': "var(--text-light);",
       },
       fontFamily: {
         roboto: "var(--font-roboto)",
@@ -29,6 +29,7 @@ export default {
         '336': '336px',
         '400': '400px',
         '480': '480px',
+        '624': '624px',
         '700': '700px',
       },
       height: {
@@ -43,6 +44,7 @@ export default {
         '34': '34px',
         '35': '35px',
         '42': '42px',
+        '45': '45px',
         '64': '64px',
         '68': '68px',
         '125': '125px',
