@@ -2,7 +2,7 @@
 import React from "react";
 
 import Colaborators from "@/app/components/data/collaborators.json";
-import { NextArrow, PrevArrow } from "@/app/components/ui/arrows";
+import { NextArrow, PrevArrow } from "@/app/components/ui/arrow-slide";
 import IconEllipsePhoto from "@/public/svg/icon-ellipse-photo";
 import IconLinkedin from "@/public/svg/icon-linkedin";
 import IconWeb from "@/public/svg/icon-web";
@@ -32,17 +32,17 @@ export default function AboutUs() {
     <section className="bg-primary-gray pb-20 lg:ml-45">
       <div className="px-6">
         <h2 className="text-gray-dark text-2xl lg:text-28 font-medium">Quem somos</h2>
-        <p className="text-gray-light text-xl font-normal mt-6 w-624">
+        <p className="text-gray-light text-xl font-normal mt-6 max-w-624">
           Nós somos o Time Laranja, uma equipe de voluntários do projeto Pipoca
           Ágil, que projetamos e desenvolvemos o Glicare.
         </p>
       </div>
 
-      <div className="mt-16 pl-6 pr-60">
+      <div className="mt-16 ml-6 lg:pr-48">
         <Slider {...settings}>
           {Colaborators.map((colaborator) => (
-            <div key={colaborator.id} className="pt-6">
-              <div className="flex items-center justify-center space-x-1">
+            <div key={colaborator.id} className="mt-6">
+              <div className="flex items-center justify-center">
                 <IconEllipsePhoto />
               </div>
               <h3 className="text-gray-dark text-center text-2xl font-medium leading-normal mt-6">

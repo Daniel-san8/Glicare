@@ -24,5 +24,4 @@ body {
 
 .slick-dots li.slick-active button:before {
   color: var(--primary) !important; 
-  opacity: 1;
 }
