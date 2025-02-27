@@ -8,7 +8,7 @@ import IconLinkedin from "@/public/svg/icon-linkedin";
 import IconWeb from "@/public/svg/icon-web";
 import Slider from "react-slick";
 
-export default function WhoWeAre() {
+export default function AboutUs() {
   const settings = {
     infinite: true,
     speed: 500,
