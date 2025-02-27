@@ -13,19 +13,29 @@ export default function Header() {
         <Button classAttributes="lg:hidden bg-transparent">
           <NavigationMenu />
         </Button>
-        <ul className="hidden lg:flex justify-around text-textColor gap-12 2xl:gap-24 font-inter font-medium text-base list-none">
-          <li><a href="#app">Nosso aplicativo</a></li>
-          <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="#sobre">Sobre diabetes</a></li>
-          <li><a href="#contatos">Contatos</a></li>
-          <li><a href="#quem-somos">Quem somos</a></li>
+        <ul className="hidden lg:flex justify-around text-gray gap-12 2xl:gap-24 font-inter font-medium text-base list-none">
+          <li>
+            <a href="#app">Nosso aplicativo</a>
+          </li>
+          <li>
+            <a href="#depoimentos">Depoimentos</a>
+          </li>
+          <li>
+            <a href="#sobre">Sobre diabetes</a>
+          </li>
+          <li>
+            <a href="#contatos">Contatos</a>
+          </li>
+          <li>
+            <a href="#quem-somos">Quem somos</a>
+          </li>
         </ul>
         <div className="hidden lg:flex gap-4">
-          <Button classAttributes="w-40 h-12 bg-secondary text-white font-inter rounded-lg" >
+          <Button classAttributes="w-40 h-12 bg-primary text-white font-inter rounded-lg">
             Baixe o Glicare
           </Button>
         </div>
       </nav>
     </header>
-  )
+  );
 }
