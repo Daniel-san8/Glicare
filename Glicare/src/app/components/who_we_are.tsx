@@ -29,10 +29,10 @@ export default function WhoWeAre() {
   };
 
   return (
-    <section className="w-full min-h-screen bg-primary-gray lg:pl-6">
+    <section className="bg-primary-gray pb-20 lg:pl-6">
       <div className="px-6">
         <h2 className="text-dark text-2xl lg:text-28 font-medium">Quem somos</h2>
-        <p className="text-gray text-xl font-normal mt-6 w-full max-w-624">
+        <p className="text-gray text-xl font-normal mt-6 max-w-624">
           Nós somos o Time Laranja, uma equipe de voluntários do projeto Pipoca
           Ágil, que projetamos e desenvolvemos o Glicare.
         </p>
@@ -41,11 +41,8 @@ export default function WhoWeAre() {
       <div className="mt-16 pl-6 pr-20">
         <Slider {...settings}>
           {Colaborators.map((colaborator) => (
-            <div
-              key={colaborator.id}
-              className="p-6"
-            >
-              <div className="flex items-center justify-center space-x-4">
+            <div key={colaborator.id} className="pt-6">
+              <div className="flex items-center justify-center space-x-2">
                 <IconEllipsePhoto />
               </div>
               <h3 className="text-dark text-center text-2xl font-medium leading-normal mt-6">
@@ -54,7 +51,7 @@ export default function WhoWeAre() {
               <p className="text-gray text-center text-base font-medium leading-normal mt-3">
                 {colaborator.funcao}
               </p>
-              <div className="flex items-center justify-center space-x-4 mt-36 mb-8">
+              <div className="flex items-center justify-center space-x-3 mt-35 mb-8">
                 <a href={colaborator.linkedin} target="_blank" rel="noopener noreferrer">
                   <IconLinkedin />
                 </a>
