@@ -1,13 +1,13 @@
 import Contact from "@/app/components/contact";
-import AboutUs from "@/app/components/about-us";
 import CallToDownload from "./components/call-to-download";
+import WhoAre from "./components/who-are";
 
 export default function Home() {
   return (
     <div>
       <CallToDownload/>
       <Contact/>
-      <AboutUs/>
+      <WhoAre/>
   </div>
   )
 }

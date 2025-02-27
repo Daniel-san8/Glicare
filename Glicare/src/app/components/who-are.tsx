@@ -2,13 +2,13 @@
 import React from "react";
 
 import Colaborators from "@/app/components/data/collaborators.json";
-import { NextArrow, PrevArrow } from "@/app/components/ui/arrow-slide";
+import { NextArrow, PrevArrow } from "@/app/components/ui/arrows-slider";
 import IconEllipsePhoto from "@/public/svg/icon-ellipse-photo";
 import IconLinkedin from "@/public/svg/icon-linkedin";
 import IconWeb from "@/public/svg/icon-web";
 import Slider from "react-slick";
 
-export default function AboutUs() {
+export default function WhoAre() {
   const settings = {
     infinite: true,
     speed: 500,
