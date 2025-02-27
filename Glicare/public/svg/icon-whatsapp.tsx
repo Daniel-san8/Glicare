@@ -1,10 +1,8 @@
-interface IconWhatsappProps {
-  className?: string;  
-}
+import ISvg from "@/app/models/svg.interface";
 
-export default function IconWhatsApp({ className }: IconWhatsappProps) {
+export default function IconWhatsApp({ className }: ISvg) {
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" className={className}>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" className={ className }>
         <path
           d="M5 35.0012L7.75 28.6678C5.6461 25.6813 4.70445 22.0296 5.10174 18.398C5.49904 14.7665 7.20798 11.4047 9.90785 8.9437C12.6077 6.48267 16.1129 5.09153 19.7656 5.03133C23.4184 4.97114 26.9675 6.24605 29.747 8.61679C32.5265 10.9875 34.3452 14.2911 34.862 17.9076C35.3787 21.5241 34.5579 25.2049 32.5535 28.2591C30.5492 31.3134 27.4991 33.5312 23.9757 34.4964C20.4522 35.4615 16.6977 35.1076 13.4167 33.5012L5 35.0012Z"
           stroke="#1C1C1C"
