@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-import Button from "@/app/components/ui/button";
-import NavigationMenu from "../../../public/svg/navigation-menu";
-import LogoGlicare from "../../../public/svg/icon-glicare-dark";
-=======
 import Button from "@/app/components/ui/button"
 import NavigationMenu from "@/public/svg/navigation-menu"
 import LogoGlicare from "@/public/svg/icon-glicare-dark"
->>>>>>> main
 
 export default function Header() {
   return (

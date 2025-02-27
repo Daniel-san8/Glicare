@@ -6,8 +6,8 @@ export default function CallToDownload() {
   return (
     <section>
       <div className="flex items-end mx-8 rounded-3xl bg-gradient-background h-full lg:pt-36 lg:mx-16">
-        <div className="flex flex-col justify-between px-6 py-10 gap-16 text-center h-full lg:flex-row lg:items-center lg:text-start">
-          <div className="flex flex-col font-inter  ">
+        <div className="flex flex-col justify-between px-4 py-10 gap-16 text-center h-full lg:flex-row lg:items-center lg:text-start">
+          <div className="flex flex-col lg:gap-6 font-inter  ">
             <div className="flex flex-col  gap-4">
               <h1 className="font-medium text-4xl text-blue lg:w-480 lg:text-6xl/tight">
                 Seu controle da diabetes muito mais simples!
@@ -17,7 +17,7 @@ export default function CallToDownload() {
                 glicemia e configure lembretes para medir a glicose.
               </p>
             </div>
-            <div className="hidden lg:flex flex-col gap-4">
+            <div className="hidden lg:flex flex-col gap-6">
               <p className="font-medium text-xl ">
                 Baixe o Glicare agora e transforme sua saúde!
               </p>
