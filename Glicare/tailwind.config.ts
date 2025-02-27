@@ -9,15 +9,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        "background": "var(--background)",
-        "foreground": "var(--foreground)",
-        "primary": "var(--primary)",
-
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        primary: "var(--primary)",
         'primary-gray': "var(--primary-gray)",
-        "secondary": "#4568FC",
-        "secondaryDark": "#0D1978",
-        "textColor": "var(--color-text-gray)",
-        "colorColorDark": "var(--text-dark)",
+        secondary: "#4568FC",
+        gray: "var(--text-gray);",
+        blue: "var(--text-blue);",
+
       },
       fontFamily: {
         roboto: "var(--font-roboto)",
@@ -28,7 +27,9 @@ export default {
       },
       width: {
         '36': '36px', 
-        '336': '336px', 
+        '336': '336px',
+        '400': '400px',
+        '480': '480px',
         '700': '700px',
       },
       height: {
