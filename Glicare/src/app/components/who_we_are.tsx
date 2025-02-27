@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Slider from "react-slick";
+import Slider, { CustomArrowProps } from "react-slick";
 
 import Colaborators from "@/app/components/data/collaborators.json";
 import IconMovePageRight from "@/public/svg/icon-move-page-right";
@@ -10,12 +10,21 @@ import IconLinkedin from "@/public/svg/icon-linkedin";
 import IconWeb from "@/public/svg/icon-web";
 
 export default function WhoWeAre() {
+
+  const NextArrow: React.FC<CustomArrowProps> = ({ onClick }) => {
+    return (
+      <button onClick={onClick} className="slick-arrow right-arrow">
+        <IconMovePageRight />
+      </button>
+    );
+  };
+
   const settings = {
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: <IconMovePageRight className="slick-arrow right-arrow" />,
+    nextArrow: <NextArrow />,
     prevArrow: <IconMovePageLeft className="slick-arrow left-arrow" />,
     dots: true,
     responsive: [
