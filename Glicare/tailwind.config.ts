@@ -14,8 +14,8 @@ export default {
         primary: "var(--primary)",
         'primary-gray': "var(--primary-gray)",
         secondary: "#4568FC",
-        gray: "var(--text-gray);",
-        blue: "var(--text-blue);",
+        grayDark: "var(--text-gray);",
+        blueDark: "var(--text-blue);",
 
       },
       fontFamily: {

@@ -9,10 +9,10 @@ export default function CallToDownload() {
         <div className="flex flex-col justify-between px-4 py-10 gap-16 text-center h-full lg:flex-row lg:items-center lg:text-start">
           <div className="flex flex-col lg:gap-6 font-inter  lg:px-10  ">
             <div className="flex flex-col  gap-4">
-              <h1 className="font-medium p-2 text-4xl text-blue lg:w-480 lg:text-6xl/tight">
+              <h1 className="font-medium p-2 text-4xl text-blueDark lg:w-480 lg:text-6xl/tight">
                 Seu controle da diabetes muito mais simples!
               </h1>
-              <p className="font-normal text-gray text-xl lg:w-400">
+              <p className="font-normal text-grayDark text-xl lg:w-400">
                 Se alimente nos horários certos, registre o histórico da sua
                 glicemia e configure lembretes para medir a glicose.
               </p>

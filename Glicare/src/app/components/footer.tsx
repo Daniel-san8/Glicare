@@ -1,7 +1,7 @@
 import IconGlicare from "@/public/svg/icon-glicare-light";
 
 export default function Footer() {
-    return <footer className="bg-blue-500 text-primary-gray pl-6 lg:grid lg:grid-cols-2 lg:grid-rows-[100px 50px 100px] lg:pl-16">
+    return <footer className="bg-primary text-primary-gray pl-6 lg:grid lg:grid-cols-2 lg:grid-rows-[100px 50px 100px] lg:pl-16">
         <div className="flex items-center gap-x-5 pt-9 pb-14 lg:pb-0 lg:pt-0 lg:col-span-1 lg:max-h-14 lg:self-center">
             <IconGlicare />
             <p className="font-roboto font-semibold text-4xl lg:text-5xl">Glicare</p>
