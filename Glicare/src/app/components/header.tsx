@@ -31,7 +31,7 @@ export default function Header() {
           </li>
         </ul>
         <div className="hidden lg:flex gap-4">
-          <Button classAttributes="w-40 h-12 bg-secondary text-white font-inter rounded-lg">
+          <Button classAttributes="w-40 h-12 bg-primary text-white font-inter rounded-lg">
             Baixe o Glicare
           </Button>
         </div>
