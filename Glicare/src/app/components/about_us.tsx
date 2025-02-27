@@ -38,11 +38,11 @@ export default function AboutUs() {
         </p>
       </div>
 
-      <div className="mt-16 pl-6 pr-20">
+      <div className="mt-16 pl-6 pr-60">
         <Slider {...settings}>
           {Colaborators.map((colaborator) => (
             <div key={colaborator.id} className="pt-6">
-              <div className="flex items-center justify-center space-x-2">
+              <div className="flex items-center justify-center space-x-1">
                 <IconEllipsePhoto />
               </div>
               <h3 className="text-dark text-center text-2xl font-medium leading-normal mt-6">
