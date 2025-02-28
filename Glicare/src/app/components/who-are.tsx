@@ -57,22 +57,24 @@ export default function WhoAre() {
           slidesToScroll: 1,
           nextArrow: undefined,  
           prevArrow: undefined,
+          autoplay: true,  
+          autoplaySpeed: 2000,
         },
       },
     ],
   };
 
   return (
-    <section className="bg-primary-gray pb-20 sm:max-w-full">
+    <section className="bg-primary-gray max-w-full pb-20 lg:px-20 overflow-x-hidden">
       <div className="px-6">
         <h2 className="text-gray-dark text-2xl lg:text-28 font-medium">Quem somos</h2>
-        <p className="text-secondary-gray text-xl font-normal mt-6 sm:max-w-full lg:max-w-624">
+        <p className="text-secondary-gray text-xl font-normal max-w-269 lg:max-w-624 mt-6">
           Nós somos o Time Laranja, uma equipe de voluntários do projeto Pipoca
           Ágil, que projetamos e desenvolvemos o Glicare.
         </p>
       </div>
 
-      <div className="mt-16 lg:max-w-[1400px] lg:pl-20">
+      <div className="w-full mt-8 lg:mt-16 lg:mb-20 lg:px-20">
         <Slider {...settings}>
           {collaborators.map((collaborator) => (
             <div key={collaborator.id} className="mt-6">
