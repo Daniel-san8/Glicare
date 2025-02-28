@@ -33,7 +33,7 @@ export default function WhoAre() {
     <section className="bg-primary-gray pb-20 lg:p-45">
       <div className="px-6">
         <h2 className="text-gray-dark text-2xl lg:text-28 font-medium">Quem somos</h2>
-        <p className="text-gray-light text-xl font-normal mt-6 max-w-624">
+        <p className="text-secondary-gray text-xl font-normal mt-6 max-w-624">
           Nós somos o Time Laranja, uma equipe de voluntários do projeto Pipoca
           Ágil, que projetamos e desenvolvemos o Glicare.
         </p>
@@ -49,7 +49,7 @@ export default function WhoAre() {
               <h3 className="text-gray-dark text-center text-2xl font-medium leading-normal mt-6">
                 {colaborator.nome}
               </h3>
-              <p className="text-gray-light text-center text-base font-medium leading-normal mt-3">
+              <p className="text-secondary-gray text-center text-base font-medium leading-normal mt-3">
                 {colaborator.funcao}
               </p>
               <div className="flex items-center justify-center space-x-3 mt-35 mb-8">

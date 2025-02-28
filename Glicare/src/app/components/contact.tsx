@@ -10,7 +10,7 @@ export default function Contact() {
         <h2 className="w-full pr-14 text-2xl lg:text-28 font-medium text-gray-dark">
           Entre em contato com o Glicare
         </h2>
-        <p className="w-full sm:w-700 mt-4 md:mt-6 pr-16 text-gray-light text-left text-lg lg:text-xl font-normal leading-tight">
+        <p className="w-full sm:w-700 mt-4 md:mt-6 pr-16 text-secondary-gray text-left text-lg lg:text-xl font-normal leading-tight">
           Caso ainda tenha dúvidas ou esteja com problema para utilizar o
           Glicare, você pode entrar em contato conosco abaixo:
         </p>
@@ -68,7 +68,7 @@ export default function Contact() {
             <IconWhatsApp className="shrink-0" />
           </div>
           <div className="flex items-center justify-center w-24 h-74 px-33 py-17 rounded-lg bg-white">
-            <IconEmail className="shrink-0"/>
+            <IconEmail className="shrink-0" />
           </div>
         </div>
       </div>
