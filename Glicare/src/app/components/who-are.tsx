@@ -2,8 +2,8 @@
 import React from "react";
 
 import Colaborators from "@/app/components/data/collaborators.json";
-import NextArrow from "@/app/components/ui/arrow-next";
-import PrevArrow from "@/app/components/ui/arrow-prev";
+import ArrowNext from "@/app/components/ui/arrow-next";
+import ArrowPrev from "@/app/components/ui/arrow-prev";
 import IconEllipsePhoto from "@/public/svg/icon-ellipse-photo";
 import IconLinkedin from "@/public/svg/icon-linkedin";
 import IconWeb from "@/public/svg/icon-web";
@@ -15,8 +15,8 @@ export default function WhoAre() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    nextArrow: <ArrowNext />,
+    prevArrow: <ArrowPrev />,
     dots: true,
     responsive: [
       {
