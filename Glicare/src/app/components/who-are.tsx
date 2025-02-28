@@ -55,15 +55,14 @@ export default function WhoAre() {
       name: "Davi Dias",
       function: "Desenvolvedor Front-end",
       linkedin: "https://www.linkedin.com/in/davifernandodias",
-      web: "web",
+      web: "https://github.com/davifernandodias",
       image: "/image/collaborators/Davi-Dias.jpeg",
     },
     {
       id: 7,
       name: "Gabriel Souza",
       function: "Desenvolvedor Front-end",
-      linkedin:
-        "https://www.linkedin.com/in/gabriel-souza-%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88-48b741139",
+      linkedin:"https://www.linkedin.com/in/gabriel-souza-%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88-48b741139",
       web: "https://github.com/GSOUZA11",
       image: "/image/collaborators/Gabriel-Souza.jpeg",
     },
