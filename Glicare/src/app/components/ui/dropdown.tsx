@@ -20,7 +20,6 @@ export default function DropDown({ title, description }: IDropDown) {
         function verificationWidth() {
             if ((matchMedia(queryMobile).matches && !matchMedia(queryTablet).matches) && description.length >= 23) {
                 setStateDescription(title.substring(0, 20) + "...");
-                console.log(stateTitle)
             } else {
                 setStateDescription(title);
             }

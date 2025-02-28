@@ -2,7 +2,8 @@
 import React from "react";
 
 import Colaborators from "@/app/components/data/collaborators.json";
-import { NextArrow, PrevArrow } from "@/app/components/ui/arrows-slider";
+import NextArrow from "@/app/components/ui/arrow-next";
+import PrevArrow from "@/app/components/ui/arrow-prev";
 import IconEllipsePhoto from "@/public/svg/icon-ellipse-photo";
 import IconLinkedin from "@/public/svg/icon-linkedin";
 import IconWeb from "@/public/svg/icon-web";
