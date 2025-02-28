@@ -15,7 +15,7 @@ export default {
         'primary-gray': "var(--primary-gray)",
         'gray-dark': "var(--text-gray);",
         'blue-dark': "var(--text-blue);",
-
+        'secondary-gray': "var(--secondary-gray)"
       },
       fontFamily: {
         roboto: "var(--font-roboto)",
