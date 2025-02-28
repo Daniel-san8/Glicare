@@ -30,7 +30,7 @@ export default function WhoAre() {
   };
 
   return (
-    <section className="bg-primary-gray pb-20 lg:ml-45">
+    <section className="bg-primary-gray pb-20 lg:p-45">
       <div className="px-6">
         <h2 className="text-gray-dark text-2xl lg:text-28 font-medium">Quem somos</h2>
         <p className="text-gray-light text-xl font-normal mt-6 max-w-624">
@@ -39,7 +39,7 @@ export default function WhoAre() {
         </p>
       </div>
 
-      <div className="mt-16 ml-6 lg:pr-48">
+      <div className="mt-16 max-w-[1440px]">
         <Slider {...settings}>
           {Colaborators.map((colaborator) => (
             <div key={colaborator.id} className="mt-6">
