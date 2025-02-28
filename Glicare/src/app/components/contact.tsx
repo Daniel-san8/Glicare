@@ -68,7 +68,7 @@ export default function Contact() {
             <IconWhatsApp className="shrink-0" />
           </div>
           <div className="flex items-center justify-center w-24 h-74 px-33 py-17 rounded-lg bg-white">
-            <IconEmail className="shrink-0"/>
+            <IconEmail className="shrink-0" />
           </div>
         </div>
       </div>
