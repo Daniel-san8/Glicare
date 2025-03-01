@@ -6,7 +6,7 @@ import { useState } from "react";
 interface IDropDown {
     title: string;
     description: string;
-    background: 'gray' | 'white';
+    background: 'primary-gray' | 'white';
 }
 
 

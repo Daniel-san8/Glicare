@@ -23,5 +23,6 @@ body {
 }
 
 .slick-dots li.slick-active button:before {
-  color: var(--primary) !important; 
+  color: var(--primary) ; 
 }
+
