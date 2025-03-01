@@ -8,73 +8,76 @@ import IconLinkedin from "@/public/svg/icon-linkedin";
 import Slider from "react-slick";
 import IconGithub from "@/public/svg/icon-github";
 import IconWeb from "@/public/svg/icon-web";
+import ICollaborators from "../models/collaborators.interface";
+
+const collaborators: ICollaborators[] = [
+  {
+    id: 1,
+    name: "Carla Rovis",
+    function: "Product Owner",
+    linkedin: "https://www.linkedin.com/in/carla-rovis",
+    web: "portfólio",
+    image: "/image/collaborators/Carla-Rovis.jpeg",
+    development: false
+  },
+  {
+    id: 2,
+    name: "Laelson Rodrigues",
+    function: "Product Owner",
+    linkedin: "https://www.linkedin.com/in/laelson-rodrigues-qa",
+    web: "portfólio",
+    image: "/image/collaborators/Laelson-Rodrigues.jpeg",
+    development: false
+  },
+  {
+    id: 3,
+    name: "Breno Neves",
+    function: "UX/UI Designer",
+    linkedin: "https://www.linkedin.com/in/brenneves",
+    web: "https://brenoneves.com",
+    image: "/image/collaborators/Breno-Neves.jpeg",
+    development: false
+  },
+  {
+    id: 4,
+    name: "Beatriz Souza",
+    function: "Desenvolvedor Front-end",
+    linkedin: "https://www.linkedin.com/in/beatriz-souza-603379194",
+    web: "https://portfolio-beatriz-ssantos.vercel.app",
+    image: "/image/collaborators/Beatriz-Souza.jpeg",
+    development: true
+  },
+  {
+    id: 5,
+    name: "Daniel Santos",
+    function: "Desenvolvedor Front-end",
+    linkedin: "https://www.linkedin.com/in/daniel-san8",
+    web: "https://github.com/Daniel-san8",
+    image: "/image/collaborators/Daniel-Santos.jpeg",
+    development: true
+  },
+  {
+    id: 6,
+    name: "Davi Dias",
+    function: "Desenvolvedor Front-end",
+    linkedin: "https://www.linkedin.com/in/davifernandodias",
+    web: "https://github.com/davifernandodias",
+    image: "/image/collaborators/Davi-Dias.jpeg",
+    development: true
+  },
+  {
+    id: 7,
+    name: "Gabriel Souza",
+    function: "Desenvolvedor Front-end",
+    linkedin: "https://www.linkedin.com/in/gabriel-souza-%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88-48b741139",
+    web: "https://github.com/GSOUZA11",
+    image: "/image/collaborators/Gabriel-Souza.jpeg",
+    development: true
+  },
+];
 
 export default function WhoAre() {
-  const collaborators = [
-    {
-      id: 1,
-      name: "Carla Rovis",
-      function: "Product Owner",
-      linkedin: "https://www.linkedin.com/in/carla-rovis",
-      web: "portfólio",
-      image: "/image/collaborators/Carla-Rovis.jpeg",
-      development: false
-    },
-    {
-      id: 2,
-      name: "Daniel Santos",
-      function: "Desenvolvedor Front-end",
-      linkedin: "https://www.linkedin.com/in/daniel-san8",
-      web: "https://github.com/Daniel-san8",
-      image: "/image/collaborators/Daniel-Santos.jpeg",
-      development: true
-    },
-    {
-      id: 3,
-      name: "Breno Neves",
-      function: "UX/UI Designer",
-      linkedin: "https://www.linkedin.com/in/brenneves",
-      web: "https://brenoneves.com",
-      image: "/image/collaborators/Breno-Neves.jpeg",
-      development: false
-    },
-    {
-      id: 4,
-      name: "Beatriz Souza",
-      function: "Desenvolvedor Front-end",
-      linkedin: "https://www.linkedin.com/in/beatriz-souza-603379194",
-      web: "https://portfolio-beatriz-ssantos.vercel.app",
-      image: "/image/collaborators/Beatriz-Souza.jpeg",
-      development: true
-    },
-    {
-      id: 5,
-      name: "Laelson Rodrigues",
-      function: "Product Owner",
-      linkedin: "https://www.linkedin.com/in/laelson-rodrigues-qa",
-      web: "portfólio",
-      image: "/image/collaborators/Laelson-Rodrigues.jpeg",
-      development: false
-    },
-    {
-      id: 6,
-      name: "Davi Dias",
-      function: "Desenvolvedor Front-end",
-      linkedin: "https://www.linkedin.com/in/davifernandodias",
-      web: "https://github.com/davifernandodias",
-      image: "/image/collaborators/Davi-Dias.jpeg",
-      development: true
-    },
-    {
-      id: 7,
-      name: "Gabriel Souza",
-      function: "Desenvolvedor Front-end",
-      linkedin: "https://www.linkedin.com/in/gabriel-souza-%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88-48b741139",
-      web: "https://github.com/GSOUZA11",
-      image: "/image/collaborators/Gabriel-Souza.jpeg",
-      development: true
-    },
-  ];
+
 
   const settings = {
     infinite: true,
