@@ -1,4 +1,5 @@
 import DropDown from "@/app/components/ui/dropdown"
+import Image from "next/image"
 
 const questionsToDoctor = [
     {
@@ -30,20 +31,26 @@ const questionsToDoctor = [
 
 
 export default function ToDoctors() {
-    return <section className="px-6 pt-6 lg:px-20">
+    return <section className="px-6 pt-6 lg:px-20 lg:pt-16">
 
-        <div className="bg-white rounded-3xl">
-            <div className="pt-6 pl-6 pb-9 pr-14">
-                <h2 className="font-medium text-2xl text-primary pb-4">Para profissionais da saúde</h2>
-                <p className="text-secondary-gray pr-8">Médicos e nutricionistas podem acompanhar de perto o dia-a-dia do paciente e ter rápido acesso ao prontuário e rotina do usuário.
-                </p>
-            </div>
-            <div className="flex flex-col gap-4 px-6 pb-10">
-                {questionsToDoctor.map(({ question, response, id }) => {
-                    return <DropDown key={id} title={question} description={response} background="primary-gray" />
-                })}
-            </div>
+        <div className="bg-white rounded-3xl relative lg:grid lg:grid-cols-2">
+            <span className="lg:col-start-1"></span>
+            <span className="hidden lg:block lg:absolute lg:-top-8 lg:left-16">
+                <Image src={"/image/smartphone-left.png"} width={365} height={692} alt="smartphone" />
+            </span>
 
+            <div className="lg:pr-4">
+                <div className="pt-6 pl-6 pb-9 pr-14">
+                    <h2 className="font-medium text-2xl text-primary pb-4">Para profissionais da saúde</h2>
+                    <p className="text-secondary-gray pr-8">Médicos e nutricionistas podem acompanhar de perto o dia-a-dia do paciente e ter rápido acesso ao prontuário e rotina do usuário.
+                    </p>
+                </div>
+                <div className="flex flex-col gap-4 px-6 pb-10">
+                    {questionsToDoctor.map(({ question, response, id }) => {
+                        return <DropDown key={id} title={question} description={response} background="primary-gray" />
+                    })}
+                </div>
+            </div>
 
         </div>
 

@@ -1,4 +1,5 @@
 import DropDown from "@/app/components/ui/dropdown"
+import Image from "next/image"
 
 const questionsToPacients = [
     {
@@ -36,19 +37,24 @@ export default function ToPacients() {
         <p className="text-secondary-gray text-lg pr-20 lg:pr-96 lg:mr-80">O Glicare é um aplicativo feito para pacientes de diabetes tipo 2 e profissionais que desejam mais simplicidade no dia-a-dia.
         </p>
 
-        <div className="mt-14 bg-white rounded-3xl">
-            <div className="pt-6 pl-6 pb-9 pr-14">
-                <h2 className="font-medium text-2xl text-primary pb-4">Para pacientes</h2>
-                <p className="text-secondary-gray pr-8">O Glicare oferece funcionalidades e soluções que possibilitam maior controle e praticidade no dia-a-dia do paciente de diabetes.
-                </p>
-            </div>
-            <div className="flex flex-col gap-4 px-6 pb-10">
-                {questionsToPacients.map(({ question, response, id }) => {
-                    return <DropDown key={id} title={question} description={response} background="primary-gray" />
-                })}
+        <div className="mt-14 bg-white rounded-3xl relative lg:grid lg:grid-cols-2">
+
+            <div className="lg:pl-4">
+                <div className="pt-6 pl-6 pb-9 pr-14 lg:pt-10">
+                    <h2 className="font-medium text-2xl text-primary pb-4">Para pacientes</h2>
+                    <p className="text-secondary-gray pr-8">O Glicare oferece funcionalidades e soluções que possibilitam maior controle e praticidade no dia-a-dia do paciente de diabetes.
+                    </p>
+                </div>
+                <div className="flex flex-col gap-4 px-6 pb-10">
+                    {questionsToPacients.map(({ question, response, id }) => {
+                        return <DropDown key={id} title={question} description={response} background="primary-gray" />
+                    })}
+                </div>
             </div>
 
-
+            <span className="hidden lg:block lg:absolute lg:-top-8 lg:right-16">
+                <Image src={"/image/smartphone-right.png"} width={365} height={692} alt="smartphone" />
+            </span>
         </div>
 
     </section>
