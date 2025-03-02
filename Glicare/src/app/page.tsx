@@ -4,6 +4,7 @@ import Contact from "@/app/components/contact";
 import ToDoctors from "@/app/components/to-doctors";
 import ToPacients from "@/app/components/to-pacients";
 import WhoAre from "@/app/components/who-are";
+import CallToDownloadSecondary from "./components/call-to-download-secondary";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <CallToDownload />
       <ToPacients />
       <ToDoctors />
+      <CallToDownloadSecondary />
       <About />
       <Contact />
       <WhoAre />

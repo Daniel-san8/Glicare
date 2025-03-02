@@ -25,12 +25,14 @@ export default function CallToDownload() {
                 <a
                   href="https://play.google.com/store"
                   aria-label="Baixar na Play Store"
+                  target="_blank"
                 >
                   <IconPlayStore />
                 </a>
                 <a
                   href="https://apps.apple.com"
                   aria-label="Baixar na Apple Store"
+                  target="_blank"
                 >
                   <IconAppleStore />
                 </a>
