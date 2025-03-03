@@ -9,7 +9,7 @@ import Feedback from "@/app/components/feedback";
 
 export default function Home() {
   return (
-    <main>
+    <main className="max-w-[1440px]">
       <CallToDownload />
       <ToPacients />
       <ToDoctors />
