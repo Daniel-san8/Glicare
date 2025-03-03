@@ -1,7 +1,8 @@
-"use client";
 import IconToCardFeedback from "@/public/svg/icon-to-card-feedback";
-import IUsersFeedback from "../models/feedback.interface";
-import Slider from "react-slick";
+import FeedbackCarrosel from "./feedback-carrosel";
+import { IUsersFeedback } from "../models/feedback.interface";
+
+
 const usersFeedback: IUsersFeedback[] = [
   {
     id: 1,
@@ -23,21 +24,11 @@ const usersFeedback: IUsersFeedback[] = [
   },
 ];
 export default function Feedback() {
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1, 
-    slidesToScroll: 1,
-    arrows: false,
-  };
-
   return (
     <section>
-      <div className="flex flex-col gap-8 px-6 py-16 md:py-36 md:px-20 md:gap-16">
+      <div className="flex flex-col gap-8 px-6 pt-14 md:pt-36 md:px-20 md:gap-16">
         <div className="flex flex-col gap-6 px-2">
-          <h1 className="text-gray-dark font-medium text-2xl md:text-28">
+          <h1 className="text-gray-dark font-medium text-2xl w-60 md:w-full md:text-28">
             O que estão dizendo do Glicare?
           </h1>
           <p className="w-56 md:w-624 md:text-xl text-secondary-gray">
@@ -62,24 +53,7 @@ export default function Feedback() {
             </div>
           ))}
         </div>
-        <div className="md:hidden">
-          <Slider {...settings}>
-            {usersFeedback.map((feedback) => (
-              <div key={feedback.id} className="px-2">
-                <div className="flex flex-col w-full h-80 justify-center items-center text-center gap-4 p-6 rounded-2xl bg-white font-inter">
-                  <IconToCardFeedback />
-                  <p className="font-normal text-gray-dark text-base px-6">
-                    {feedback.feedback}
-                  </p>
-                  <div className="bg-blue-400 w-16 h-16 rounded-full"></div>
-                  <p className="font-normal text-base text-secondary-gray">
-                    {feedback.user}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
+        <FeedbackCarrosel />
       </div>
     </section>
   );

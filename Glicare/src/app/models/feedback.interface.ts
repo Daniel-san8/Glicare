@@ -1,4 +1,4 @@
-export default interface IUsersFeedback {
+export interface IUsersFeedback {
   id: number;
   feedback: string;
   user: string;
