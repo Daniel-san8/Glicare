@@ -1,4 +1,4 @@
-import { ButtonProps } from '@/app/models/button.interface';
+import ButtonProps from '@/app/models/button.interface';
 import React from 'react';
 
 
