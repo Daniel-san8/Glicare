@@ -124,9 +124,8 @@ export default function WhoAre() {
                   <Image
                     src={collaborator.image}
                     alt={collaborator.name}
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-full"
+                    fill={true}
+                    className="rounded-full object-cover"
                   />
                 </div>
               </div>
