@@ -3,3 +3,9 @@ export default interface IDropdown {
     response: string;
     id: number;
 }
+
+export interface IDropDownUI {
+    title: string;
+    description: string;
+    background: 'primary-gray' | 'white';
+}

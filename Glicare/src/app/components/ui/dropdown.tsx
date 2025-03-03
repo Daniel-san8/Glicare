@@ -1,16 +1,12 @@
 "use client";
 
+import { IDropDownUI } from "@/app/models/dropdown.interface";
 import IconArrowDown from "@/public/svg/arrow-down";
 import { useState } from "react";
 
-interface IDropDown {
-    title: string;
-    description: string;
-    background: 'primary-gray' | 'white';
-}
 
 
-export default function DropDown({ title, description, background }: IDropDown) {
+export default function DropDown({ title, description, background }: IDropDownUI) {
 
     const [openDescription, setOpenDescription] = useState<boolean>(false);
 
