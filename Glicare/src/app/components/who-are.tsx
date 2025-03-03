@@ -8,7 +8,7 @@ import IconLinkedin from "@/public/svg/icon-linkedin";
 import Slider from "react-slick";
 import IconGithub from "@/public/svg/icon-github";
 import IconWeb from "@/public/svg/icon-web";
-import ICollaborators from "../models/collaborators.interface";
+import ICollaborators from "@/app/models/collaborators.interface";
 
 const collaborators: ICollaborators[] = [
   {

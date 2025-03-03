@@ -4,12 +4,12 @@ import Contact from "@/app/components/contact";
 import ToDoctors from "@/app/components/to-doctors";
 import ToPacients from "@/app/components/to-pacients";
 import WhoAre from "@/app/components/who-are";
-import CallToDownloadSecondary from "./components/call-to-download-secondary";
-import Feedback from "./components/feedback";
+import CallToDownloadSecondary from "@/app/components/call-to-download-secondary";
+import Feedback from "@/app/components/feedback";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <CallToDownload />
       <ToPacients />
       <ToDoctors />
@@ -18,6 +18,6 @@ export default function Home() {
       <About />
       <Contact />
       <WhoAre />
-    </div>
+    </main>
   )
 }

@@ -1,6 +1,6 @@
 import IconToCardFeedback from "@/public/svg/icon-to-card-feedback";
-import FeedbackCarrosel from "./feedback-carrosel";
-import { IUsersFeedback } from "../models/feedback.interface";
+import FeedbackCarrosel from "@/app/components/feedback-carrosel";
+import IUsersFeedback from "@/app/models/feedback.interface";
 
 
 const usersFeedback: IUsersFeedback[] = [

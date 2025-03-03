@@ -1,7 +1,7 @@
 "use client";
 
 import Slider from "react-slick";
-import { IUsersFeedback } from "../models/feedback.interface";
+import IUsersFeedback from "@/app/models/feedback.interface";
 import IconToCardFeedback from "@/public/svg/icon-to-card-feedback";
 
 const usersFeedback: IUsersFeedback[] = [

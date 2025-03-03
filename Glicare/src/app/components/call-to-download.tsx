@@ -1,5 +1,5 @@
 import IconPlayStore from "@/public/svg/icon-play-store";
-import Button from "./ui/button";
+import Button from "@/app/components/ui/button";
 import IconAppleStore from "@/public/svg/icon-apple-store";
 
 export default function CallToDownload() {
