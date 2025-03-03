@@ -40,7 +40,7 @@ export default function Feedback() {
           <h1 className="text-gray-dark font-medium text-2xl md:text-28">
             O que estão dizendo do Glicare?
           </h1>
-          <p className="md:w-624 md:text-xl text-secondary-gray">
+          <p className="w-56 md:w-624 md:text-xl text-secondary-gray">
             Muitos usuários já estão usando o Glicare para simplificarem a
             rotina e o controle das diabetes.
           </p>
