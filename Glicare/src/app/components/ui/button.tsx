@@ -1,9 +1,6 @@
-import React, { ReactNode } from 'react';
+import { ButtonProps } from '@/app/models/button.interface';
+import React from 'react';
 
-interface ButtonProps {
-  children: ReactNode;
-  classAttributes?: string;
-}
 
 export function Button({ children, classAttributes }: ButtonProps) {
 
