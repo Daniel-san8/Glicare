@@ -36,7 +36,7 @@ export default function Feedback() {
   return (
     <section>
       <div className="flex flex-col gap-8 px-6 py-16 md:py-36 md:px-20 md:gap-16">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 px-2">
           <h1 className="text-gray-dark font-medium text-2xl md:text-28">
             O que estão dizendo do Glicare?
           </h1>
