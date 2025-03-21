@@ -176,7 +176,6 @@ export default function WhoAre() {
                 </div>
               </div>
               <h3 className="text-gray-dark text-center text-2xl font-medium leading-normal mt-6">
-
                 <span className="inline-block md:hidden">
                   {collaborator.name.split(" ")[0]}
                 </span>
@@ -185,13 +184,21 @@ export default function WhoAre() {
                   {collaborator.name.split(" ").slice(1).join(" ")}
                 </span>
 
-
                 <span className="hidden md:inline-block">
                   {collaborator.name}
                 </span>
               </h3>
-              <p className="text-secondary-gray text-center sm:text-[10px] text-base font-medium leading-normal mt-3">
-                {collaborator.function}
+              <p className="text-secondary-gray text-center text-base font-medium leading-normal mt-3">
+                <span className="inline-block md:hidden">
+                  {collaborator.function.split(" ")[0]}
+                </span>
+                <br className="md:hidden" />
+                <span className="inline-block md:hidden">
+                  {collaborator.function.split(" ").slice(1).join(" ")}
+                </span>
+                <span className="hidden md:inline-block">
+                  {collaborator.function}
+                </span>
               </p>
               <div className="flex items-center justify-center space-x-3 mb-8 mt-35">
                 <a
