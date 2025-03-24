@@ -15,7 +15,7 @@ export default function Contact() {
           Glicare, você pode entrar em contato conosco abaixo:
         </p>
 
-        <div className="hidden md:flex flex-col md:flex-row gap-6 mt-64 lg:justify-center">
+        <div className="hidden md:flex flex-col md:flex-row gap-6 mt-16 lg:justify-center">
           <div className="w-224 lg:w-336 h-310 flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
             <IconPhone className="mx-auto mt-34 bg-white" />
             <h3 className="font-medium text-lg text-gray-dark mt-6 mb-68">
@@ -31,7 +31,7 @@ export default function Contact() {
 
           <div className="w-224 lg:w-336 h-310 flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">
             <IconWhatsApp className="mx-auto mt-34 bg-white" />
-            <h3 className="font-medium text-lg text-gray-dark mt-6 mb-64">
+            <h3 className="font-medium text-lg text-gray-dark mt-6 mb-16">
               Nos chame no WhatsApp
             </h3>
             <a
