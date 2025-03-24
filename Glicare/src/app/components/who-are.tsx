@@ -136,7 +136,7 @@ export default function WhoAre() {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
