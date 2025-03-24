@@ -42,7 +42,7 @@ export default function Contact() {
             >
               <Button classAttributes="md:bg-blue-500 font-semibold text-base">
                 <span className="lg:hidden">Chamar</span>
-                <span className="md:hidden">Chamar no WhatsApp</span>
+                <span className="lg:block md:hidden">Chamar no WhatsApp</span>
               </Button>
             </a>
           </div>
