@@ -23,7 +23,7 @@ export default function Contact() {
             </h3>
             <a
               href="tel:+5512345678901"
-              className="text-blue-dark text-center text-lg lg:text-xl font-semibold ml-6"
+              className="text-blue-dark text-center text-lg lg:text-xl font-semibold lg:ml-6"
             >
               +55 12 34567-8901
             </a>
@@ -38,11 +38,11 @@ export default function Contact() {
               href="https://wa.me/5512345678901"
               target="_blank"
               rel="noopener noreferrer"
-              className="md:bg-blue-500 gap-2 px-6 py-4 rounded-lg"
+              className="gap-2 px-6 py-4 rounded-lg"
             >
-              <Button classAttributes="font-semibold text-base">
-              <span className="md:hidden">Chamar</span> 
-              <span className="hidden md:inline">Chamar no WhatsApp</span>
+              <Button classAttributes="md:bg-blue-500 font-semibold text-base">
+                <span className="lg:hidden">Chamar</span>
+                <span className="md:hidden">Chamar no WhatsApp</span>
               </Button>
             </a>
           </div>
