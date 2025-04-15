@@ -32,7 +32,7 @@ const questionsToDoctor: IQuestions[] = [
 
 
 export default function ToDoctors() {
-    return <section className="px-6 pt-6 lg:px-20 md:pt-16">
+    return <section className="px-6 pt-6 lg:px-20 md:pt-32 lg:pt-16">
 
         <div className="bg-white rounded-3xl relative md:grid md:grid-cols-2">
             <span className="md:col-start-1"></span>
