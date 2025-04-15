@@ -30,14 +30,22 @@ export default function FeedbackCarrosel() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="md:hidden">
+    <div className="lg:hidden">
       <Slider {...settings}>
         {usersFeedback.map((feedback) => (
           <div key={feedback.id} className="px-2">
