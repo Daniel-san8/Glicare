@@ -32,7 +32,7 @@ const questionsToPacients: IQuestions[] = [
 
 
 export default function ToPacients() {
-    return <section className="px-6 pt-16 lg:px-20">
+    return <section className="px-6 pt-16 md:pb-6 lg:pb-0 lg:px-20">
 
         <h1 className="font-medium text-2xl text-gray-dark pb-4">Nosso aplicativo</h1>
         <p className="text-secondary-gray text-lg pr-20 md:text-xl md:w-624 lg:w-720">O Glicare é um aplicativo feito para pacientes de diabetes tipo 2 e profissionais que desejam mais simplicidade no dia-a-dia.
