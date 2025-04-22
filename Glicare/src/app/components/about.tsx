@@ -48,7 +48,7 @@ const questionsAbout: IQuestions[] = [
 
 
 export default function About() {
-    return <section className="lg:px-20 pt-16">
+    return <section id="sobre" className="lg:px-20 pt-16">
         <div className="pl-6 pr-20 pb-9">
             <h1 className="font-medium text-2xl text-gray-dark pb-4">Sobre diabetes e o Glicare</h1>
             <p className="text-secondary-gray text-lg md:text-xl md:w-624 lg:w-720">Ficou com dúvidas sobre diabetes, condições e o Glicare? Tire elas aqui.</p>

@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="bg-primary-gray h-24 flex justify-between items-center p-4 lg:h-28 lg:p-10">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-primary-gray h-24 flex justify-between items-center p-4 lg:h-28 lg:p-10">
         <div className="flex gap-4 items-center text-black">
           <LogoGlicare />
           <p className="font-roboto font-semibold text-4xl">Glicare</p>
@@ -44,16 +44,21 @@ export default function Header() {
           </Button>
         </div>
 
-        {menuOpen && (
-          <div className="absolute top-24 left-0 w-full bg-white shadow-md py-6 px-4 z-50 flex flex-col gap-6 text-black font-inter text-lg items-center text-center lg:hidden">
-            <a href="#app" onClick={() => setMenuOpen(false)}>Nosso aplicativo</a>
-            <a href="#depoimentos" onClick={() => setMenuOpen(false)}>Depoimentos</a>
-            <a href="#sobre" onClick={() => setMenuOpen(false)}>Sobre diabetes</a>
-            <a href="#contatos" onClick={() => setMenuOpen(false)}>Contatos</a>
-            <a href="#quem-somos" onClick={() => setMenuOpen(false)}>Quem somos</a>
+        <div
+          aria-hidden={!menuOpen}
+          className={`absolute top-24 left-0 w-full bg-white shadow-md py-6 px-4 z-50 
+              flex flex-col gap-6 text-black font-inter text-lg items-center text-center 
+              lg:hidden transition-all duration-300 ease-in-out 
+              ${menuOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`}>
+  
+                <a href="#app" onClick={() => setMenuOpen(false)}>Nosso aplicativo</a>
+                <a href="#depoimentos" onClick={() => setMenuOpen(false)}>Depoimentos</a>
+                <a href="#sobre" onClick={() => setMenuOpen(false)}>Sobre diabetes</a>
+                <a href="#contatos" onClick={() => setMenuOpen(false)}>Contatos</a>
+                <a href="#quem-somos" onClick={() => setMenuOpen(false)}>Quem somos</a>
           </div>
-        )}
-      </nav>
+
+        </nav>
     </header>
   );
 }
