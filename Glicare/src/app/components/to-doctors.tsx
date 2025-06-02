@@ -4,28 +4,28 @@ import IQuestions from "@/app/models/questions.interface"
 
 const questionsToDoctor: IQuestions[] = [
     {
-        question: "Acompanhe a rotina e saúde do seu paciente",
-        response: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum autem tenetur tempore laborum dicta! Eos architecto sapiente aliquam fugiat minima eum iure accusantium, ratione, alias tempore ipsa obcaecati corporis! Vitae possimus porro dolorem saepe maxime sunt consectetur necessitatibus rerum distinctio ipsam nostrum suscipit ut natus at, veniam fugiat perferendis, cum odit. Pariatur cum commodi tenetur incidunt assumenda recusandae facilis? Deleniti ea esse, ipsa corrupti minus aut voluptas beatae libero unde magni accusamus dignissimos nam voluptates amet dolor dolores incidunt. Voluptates ad temporibus tempora ut explicabo dignissimos vero esse magnam.",
+        question: "⏱ Monitoramento em Tempo Real",
+        response: "Acompanhe a rotina de medições de glicose, medicamentos e hábitos dos seus pacientes diretamente pelo app.",
         id: 1
     },
     {
-        question: "Questionário para a descoberta do perfil do paciente",
-        response: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum autem tenetur tempore laborum dicta! Eos architecto sapiente aliquam fugiat minima eum iure accusantium, ratione, alias tempore ipsa obcaecati corporis! Vitae possimus porro dolorem saepe maxime sunt consectetur necessitatibus rerum distinctio ipsam nostrum suscipit ut natus at, veniam fugiat perferendis, cum odit. Pariatur cum commodi tenetur incidunt assumenda recusandae facilis? Deleniti ea esse, ipsa corrupti minus aut voluptas beatae libero unde magni accusamus dignissimos nam voluptates amet dolor dolores incidunt. Voluptates ad temporibus tempora ut explicabo dignissimos vero esse magnam.",
+        question: "📝 Questionário de Perfil Rápido",
+        response: "Identifique o perfil de cada paciente com um questionário simples, mas completo, para orientar seu cuidado.",
         id: 2
     },
     {
-        question: "Defina alertas de aviso para seu paciente",
-        response: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum autem tenetur tempore laborum dicta! Eos architecto sapiente aliquam fugiat minima eum iure accusantium, ratione, alias tempore ipsa obcaecati corporis! Vitae possimus porro dolorem saepe maxime sunt consectetur necessitatibus rerum distinctio ipsam nostrum suscipit ut natus at, veniam fugiat perferendis, cum odit. Pariatur cum commodi tenetur incidunt assumenda recusandae facilis? Deleniti ea esse, ipsa corrupti minus aut voluptas beatae libero unde magni accusamus dignissimos nam voluptates amet dolor dolores incidunt. Voluptates ad temporibus tempora ut explicabo dignissimos vero esse magnam.",
+        question: "🔔 Alertas Personalizados",
+        response: "Envie lembretes automaticos para seus pacientes sobre medicamentos, exames ou consultas.",
         id: 3
     },
     {
-        question: "Exporte os dados do paciente em PDF para consultas",
-        response: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum autem tenetur tempore laborum dicta! Eos architecto sapiente aliquam fugiat minima eum iure accusantium, ratione, alias tempore ipsa obcaecati corporis! Vitae possimus porro dolorem saepe maxime sunt consectetur necessitatibus rerum distinctio ipsam nostrum suscipit ut natus at, veniam fugiat perferendis, cum odit. Pariatur cum commodi tenetur incidunt assumenda recusandae facilis? Deleniti ea esse, ipsa corrupti minus aut voluptas beatae libero unde magni accusamus dignissimos nam voluptates amet dolor dolores incidunt. Voluptates ad temporibus tempora ut explicabo dignissimos vero esse magnam.",
+        question: "📤 Exportação de Dados Simplificada",
+        response: "Gere relatórios em PDF com o historico completo do paciente para análises e consultas.",
         id: 4
     },
     {
-        question: "Botão de emergência",
-        response: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum autem tenetur tempore laborum dicta! Eos architecto sapiente aliquam fugiat minima eum iure accusantium, ratione, alias tempore ipsa obcaecati corporis! Vitae possimus porro dolorem saepe maxime sunt consectetur necessitatibus rerum distinctio ipsam nostrum suscipit ut natus at, veniam fugiat perferendis, cum odit. Pariatur cum commodi tenetur incidunt assumenda recusandae facilis? Deleniti ea esse, ipsa corrupti minus aut voluptas beatae libero unde magni accusamus dignissimos nam voluptates amet dolor dolores incidunt. Voluptates ad temporibus tempora ut explicabo dignissimos vero esse magnam.",
+        question: "🆘 Emergências Identificadas Rapidamente",
+        response: "Receba alertas imediatos se um paciente acionar o botão de emergência.",
         id: 5
     },
 ]
@@ -43,7 +43,7 @@ export default function ToDoctors() {
             <div className="lg:pr-4">
                 <div className="pt-6 pl-6 pb-9 pr-14">
                     <h2 className="font-medium text-2xl text-primary pb-4">Para profissionais da saúde</h2>
-                    <p className="text-secondary-gray pr-8 md:pr-4">Médicos e nutricionistas podem acompanhar de perto o dia-a-dia do paciente e ter rápido acesso ao prontuário e rotina do usuário.
+                    <p className="text-secondary-gray pr-8 md:pr-4">O Glicare foi desenvolvido para ajudar médicos, nutricionistas e outros profissionais da saúde a monitorar seus pacientes de forma eficiente e personalizada.
                     </p>
                 </div>
                 <div className="flex flex-col gap-4 px-6 pb-10">
