@@ -2,7 +2,6 @@ import IconPlayStore from "@/public/svg/icon-play-store";
 import Button from "@/app/components/ui/button";
 import IconAppleStore from "@/public/svg/icon-apple-store";
 import Image from "next/image";
-import CircleGrayMobile from "@/public/svg/circle-gray-mobile";
 
 export default function CallToDownload() {
   return (
@@ -20,11 +19,7 @@ export default function CallToDownload() {
               </p>
             </div>
             <div className="relative flex items-center justify-center mt-6 md:flex lg:hidden">
-            <Image src="/image/mascot.png" alt="mascote" width={36} height={156} className="z-10 mt-20 md:mt-36 md:w-16 md:h-64"/>
-              <div className="relative flex justify-center">
-                <div className="absolute top-1/2 -translate-y-1/2 z-0 mr-4 md:hidden"><CircleGrayMobile/></div>
-                <Image src="/image/smartphone-center.png" alt="smartphone" width={207} height={459} className="relative z-10 w-24 h-64 md:w-52 md:h-458"/>
-              </div>
+            <Image src="/image/Dr-Glico-hero-page.png"  alt="Dr. Glico" width={415} height={485} />
             </div>
             <div className="hidden md:flex flex-col md:mt-6 gap-6">
               <p className="font-medium text-xl">
@@ -50,6 +45,9 @@ export default function CallToDownload() {
           </div>
           <div className="md:hidden">
             <Button classAttributes="bg-primary w-full">Baixe o Glicare</Button>
+          </div>
+          <div className="hidden lg:flex justify-center mb-16 mr-12 -mt-4">
+            <Image src="/image/Dr-Glico-hero-page.png" alt="Dr. Glico" width={569}  height={665} />
           </div>
         </div>
       </div>
