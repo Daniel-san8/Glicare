@@ -5,43 +5,43 @@ import DropDown from "@/app/components/ui/dropdown"
 const questionsAbout: IQuestions[] = [
     {
         question: "O que é a diabetes?",
-        response: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum autem tenetur tempore laborum dicta! Eos architecto sapiente aliquam fugiat minima eum iure accusantium, ratione, alias tempore ipsa obcaecati corporis! Vitae possimus porro dolorem saepe maxime sunt consectetur necessitatibus rerum distinctio ipsam nostrum suscipit ut natus at, veniam fugiat perferendis, cum odit. Pariatur cum commodi tenetur incidunt assumenda recusandae facilis? Deleniti ea esse, ipsa corrupti minus aut voluptas beatae libero unde magni accusamus dignissimos nam voluptates amet dolor dolores incidunt. Voluptates ad temporibus tempora ut explicabo dignissimos vero esse magnam.",
+        response: "Diabetes é uma condição crônica onde o corpo não produz insulina suficiente (hormônio que regula o açúcar no sangue) ou não a utiliza corretamente. Isso leva ao acúmulo de glicose no sangue, que pode causar complicações se não for controlado.",
         id: 1
     }, {
         question: "Quais são os sintomas mais comuns da diabetes?",
-        response: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum autem tenetur tempore laborum dicta! Eos architecto sapiente aliquam fugiat minima eum iure accusantium, ratione, alias tempore ipsa obcaecati corporis! Vitae possimus porro dolorem saepe maxime sunt consectetur necessitatibus rerum distinctio ipsam nostrum suscipit ut natus at, veniam fugiat perferendis, cum odit. Pariatur cum commodi tenetur incidunt assumenda recusandae facilis? Deleniti ea esse, ipsa corrupti minus aut voluptas beatae libero unde magni accusamus dignissimos nam voluptates amet dolor dolores incidunt. Voluptates ad temporibus tempora ut explicabo dignissimos vero esse magnam.",
+        response: "Sede e fome excessivas, vontade frequente de urinar,  perda de peso sem motivo,  cansaço e irritabilidade, formigamento nas mãos/pés, visão embaçada, feridas que demoram a cicatrizar, infecções frequentes ",
         id: 2
     }, {
-        question: "Quais as diferenças entre a diabetes tipo 1 e do tipo 2?",
-        response: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum autem tenetur tempore laborum dicta! Eos architecto sapiente aliquam fugiat minima eum iure accusantium, ratione, alias tempore ipsa obcaecati corporis! Vitae possimus porro dolorem saepe maxime sunt consectetur necessitatibus rerum distinctio ipsam nostrum suscipit ut natus at, veniam fugiat perferendis, cum odit. Pariatur cum commodi tenetur incidunt assumenda recusandae facilis? Deleniti ea esse, ipsa corrupti minus aut voluptas beatae libero unde magni accusamus dignissimos nam voluptates amet dolor dolores incidunt. Voluptates ad temporibus tempora ut explicabo dignissimos vero esse magnam.",
+        question: "Quais as diferenças entre a pré-diabetes, diabetes gestacional,  diabetes tipo 1 e do tipo 2?",
+        response: "Pré- diabetes: Níveis de glicose acima do normal, mas ainda não caracterizam diabetes. Reversível com alimentação balanceada e exercícios. Diabetes gestacional: Acontece durante a gravidez devido a alterações hormonais. Requer acompanhamento para evitar riscos à mãe e ao bebê. Tipo 1 : Doença autoimune onde o pâncreas para de produzir insulina. Tipo 2 : O corpo produz insulina, mas não a usa bem (resistência à insulina).",
         id: 3
     }, {
         question: "Como é feito o diagnóstico da diabetes?",
-        response: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum autem tenetur tempore laborum dicta! Eos architecto sapiente aliquam fugiat minima eum iure accusantium, ratione, alias tempore ipsa obcaecati corporis! Vitae possimus porro dolorem saepe maxime sunt consectetur necessitatibus rerum distinctio ipsam nostrum suscipit ut natus at, veniam fugiat perferendis, cum odit. Pariatur cum commodi tenetur incidunt assumenda recusandae facilis? Deleniti ea esse, ipsa corrupti minus aut voluptas beatae libero unde magni accusamus dignissimos nam voluptates amet dolor dolores incidunt. Voluptates ad temporibus tempora ut explicabo dignissimos vero esse magnam.",
+        response: "O diagnóstico é simples e feito através de exames de sangue: Teste de glicemia em jejum: mede seu açúcar no sangue após 8 horas sem comer. Hemoglobina glicada (HbA1c): mostra sua média de glicose nos últimos 3 meses. Endocrinologista é o especialista mais indicado. Para interpretar esses exames e, junto com você, criar o melhor plano de tratamento sempre pensando no seu bem-estar e qualidade de vida. Dica do Dr. Glico! Se notar sintomas como muita sede, cansaço ou visão embaçada, converse com seu médico sobre a possibilidade de fazer esses exames. Quanto antes descobrir, mais fácil é controlar!",
         id: 4
     }, {
-        question: "A diabetes tem cura e pode ser evitada?",
-        response: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum autem tenetur tempore laborum dicta! Eos architecto sapiente aliquam fugiat minima eum iure accusantium, ratione, alias tempore ipsa obcaecati corporis! Vitae possimus porro dolorem saepe maxime sunt consectetur necessitatibus rerum distinctio ipsam nostrum suscipit ut natus at, veniam fugiat perferendis, cum odit. Pariatur cum commodi tenetur incidunt assumenda recusandae facilis? Deleniti ea esse, ipsa corrupti minus aut voluptas beatae libero unde magni accusamus dignissimos nam voluptates amet dolor dolores incidunt. Voluptates ad temporibus tempora ut explicabo dignissimos vero esse magnam.",
+        question: "Como é o tratamento para a diabetes?",
+        response: "Mudanças no estilo de vida, monitoramento constante, medicamentos e, em alguns casos, insulina diaria",
         id: 5
     }, {
-        question: "Como funciona o aplicativo Glicare?",
-        response: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum autem tenetur tempore laborum dicta! Eos architecto sapiente aliquam fugiat minima eum iure accusantium, ratione, alias tempore ipsa obcaecati corporis! Vitae possimus porro dolorem saepe maxime sunt consectetur necessitatibus rerum distinctio ipsam nostrum suscipit ut natus at, veniam fugiat perferendis, cum odit. Pariatur cum commodi tenetur incidunt assumenda recusandae facilis? Deleniti ea esse, ipsa corrupti minus aut voluptas beatae libero unde magni accusamus dignissimos nam voluptates amet dolor dolores incidunt. Voluptates ad temporibus tempora ut explicabo dignissimos vero esse magnam.",
+        question: "Como o Glicare pode te ajudar no controle do diabetes?",
+        response: "O Glicare é seu parceiro no dia a dia, facilitando o monitoramento da glicemia, a organização dos medicamentos e a rotina alimentar.  Além de conectar você ao seu médico de forma prática e segura.",
         id: 6
     }, {
-        question: "Como meu médico acompanha meu prontuário?",
-        response: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum autem tenetur tempore laborum dicta! Eos architecto sapiente aliquam fugiat minima eum iure accusantium, ratione, alias tempore ipsa obcaecati corporis! Vitae possimus porro dolorem saepe maxime sunt consectetur necessitatibus rerum distinctio ipsam nostrum suscipit ut natus at, veniam fugiat perferendis, cum odit. Pariatur cum commodi tenetur incidunt assumenda recusandae facilis? Deleniti ea esse, ipsa corrupti minus aut voluptas beatae libero unde magni accusamus dignissimos nam voluptates amet dolor dolores incidunt. Voluptates ad temporibus tempora ut explicabo dignissimos vero esse magnam.",
+        question: "Como meu médico acompanha meus dados?",
+        response: "Seu médico acessa suas informações de forma segura pelo aplicativo, mas somente se você autorizar o compartilhamento. Você tem total controle sobre seus dados.",
         id: 7
     }, {
-        question: "Preciso ter cadastro para usar o Glicare?",
-        response: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum autem tenetur tempore laborum dicta! Eos architecto sapiente aliquam fugiat minima eum iure accusantium, ratione, alias tempore ipsa obcaecati corporis! Vitae possimus porro dolorem saepe maxime sunt consectetur necessitatibus rerum distinctio ipsam nostrum suscipit ut natus at, veniam fugiat perferendis, cum odit. Pariatur cum commodi tenetur incidunt assumenda recusandae facilis? Deleniti ea esse, ipsa corrupti minus aut voluptas beatae libero unde magni accusamus dignissimos nam voluptates amet dolor dolores incidunt. Voluptates ad temporibus tempora ut explicabo dignissimos vero esse magnam.",
+        question: "Preciso me cadastrar para usar o Glicare?",
+        response: "Sim, mas é rápido e gratuito! Basta baixar o app e criar sua conta em poucos passos.",
         id: 8
     }, {
-        question: "O Glicare está disponível em quais aparelhos?",
-        response: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum autem tenetur tempore laborum dicta! Eos architecto sapiente aliquam fugiat minima eum iure accusantium, ratione, alias tempore ipsa obcaecati corporis! Vitae possimus porro dolorem saepe maxime sunt consectetur necessitatibus rerum distinctio ipsam nostrum suscipit ut natus at, veniam fugiat perferendis, cum odit. Pariatur cum commodi tenetur incidunt assumenda recusandae facilis? Deleniti ea esse, ipsa corrupti minus aut voluptas beatae libero unde magni accusamus dignissimos nam voluptates amet dolor dolores incidunt. Voluptates ad temporibus tempora ut explicabo dignissimos vero esse magnam.",
+        question: "Em quais dispositivos funciona?",
+        response: "Disponível para todos: smartphones Android e iPhone (iOS).",
         id: 9
     }, {
         question: "O Glicare é pago?",
-        response: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum autem tenetur tempore laborum dicta! Eos architecto sapiente aliquam fugiat minima eum iure accusantium, ratione, alias tempore ipsa obcaecati corporis! Vitae possimus porro dolorem saepe maxime sunt consectetur necessitatibus rerum distinctio ipsam nostrum suscipit ut natus at, veniam fugiat perferendis, cum odit. Pariatur cum commodi tenetur incidunt assumenda recusandae facilis? Deleniti ea esse, ipsa corrupti minus aut voluptas beatae libero unde magni accusamus dignissimos nam voluptates amet dolor dolores incidunt. Voluptates ad temporibus tempora ut explicabo dignissimos vero esse magnam.",
+        response: "Para pacientes: 100% gratuito! Para profissionais de saúde: oferecemos planos premium com recursos avançados de acompanhamento.",
         id: 10
     },
 ]
