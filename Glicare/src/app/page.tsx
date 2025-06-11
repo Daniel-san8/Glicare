@@ -10,7 +10,7 @@ import StoresDownload from "./components/stores-download";
 
 export default function Home() {
   return (
-    <main className="max-w-[1440px]">
+    <main>
       <CallToDownload />
       <ToPacients />
       <ToDoctors />
