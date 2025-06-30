@@ -1,9 +1,19 @@
+"use client";
 import Button from "@/app/components/ui/button";
 import IconEmail from "@/public/svg/icon-email";
 import IconPhone from "@/public/svg/icon-phone";
 import IconWhatsApp from "@/public/svg/icon-whatsapp";
 
 export default function Contact() {
+
+  function handleClickWhatsApp() {
+  alert(
+    "Informamos que no momento nosso atendimento via WhatsApp e telefone não está disponível.\n\n" +
+    "Por favor, utilize nosso e-mail: contato@glicare.com para entrar em contato.\n\n" +
+    "Agradecemos pela compreensão."
+  );
+}
+
   return (
     <section id="contatos" className="w-full flex-shrink-0 bg-primary-gray lg:px-20">
       <div className="py-12 px-6 text-left">
@@ -34,17 +44,10 @@ export default function Contact() {
             <h3 className="font-medium text-lg text-gray-dark mt-6 mb-16">
               Nos chame no WhatsApp
             </h3>
-            <a
-              href="https://wa.me/5512345678901"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="gap-2 px-6 py-4 rounded-lg"
-            >
-              <Button classAttributes="md:bg-blue-500 font-semibold text-base">
+              <Button onClick={handleClickWhatsApp} classAttributes="md:bg-blue-500 font-semibold text-base">
                 <span className="lg:hidden">Chamar</span>
                 <span className="lg:block md:hidden">Chamar no WhatsApp</span>
               </Button>
-            </a>
           </div>
 
           <div className="w-224 lg:w-336 h-310 flex-shrink-0 bg-background rounded-2xl p-6 text-center hidden md:block">

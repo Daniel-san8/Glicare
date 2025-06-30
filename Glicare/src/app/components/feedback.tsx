@@ -1,6 +1,7 @@
 import IconToCardFeedback from "@/public/svg/icon-to-card-feedback";
 import FeedbackCarrosel from "@/app/components/feedback-carrosel";
 import IUsersFeedback from "@/app/models/feedback.interface";
+import Image from "next/image";
 
 
 const usersFeedback: IUsersFeedback[] = [
@@ -9,18 +10,21 @@ const usersFeedback: IUsersFeedback[] = [
     feedback:
       "Desde que comecei a usar o Glicare, ficou muito mais fácil acompanhar minha diabetes.",
     user: "Rosângela Amaral",
+    image: "/image/user-feedback/Rosangela-Amaral.jpg",
   },
   {
     id: 2,
     feedback:
       "Meus pacientes adoram. Meu trabalho é mais fácil e posso ver a evolução de cada um.",
     user: "Dr. Mauro Cordeiro",
+    image: "/image/user-feedback/Dr-Mauro-Cordeiro.jpg",
   },
   {
     id: 3,
     feedback:
       "Ficou muito mais simples de acompanhar a condição da minha mãe.",
     user: "Ana Carolina Medeiros",
+    image: "/image/user-feedback/Ana-Carolina-Medeiros.jpg",
   },
 ];
 export default function Feedback() {
@@ -46,7 +50,7 @@ export default function Feedback() {
               <p className="font-normal text-gray-dark text-base px-4 md:px-8">
                 {feedback.feedback}
               </p>
-              <div className="bg-blue-400 w-16 h-16 rounded-full"></div>
+              <div><Image  src={feedback.image} alt={`Foto de ${feedback.user}`} width={64}  height={64} className="rounded-full object-cover"/></div>
               <p className="font-normal text-base text-secondary-gray">
                 {feedback.user}
               </p>
